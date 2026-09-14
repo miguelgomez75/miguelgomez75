@@ -1,16 +1,16 @@
-## Hi there 👋
+<table>
+<tr>
+<td width="66%" valign="top">
 
-<!--
-**miguelgomez75/miguelgomez75** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Sobre mí
+Aquí va tu bio, stats card, tecnologías, lo que quieras.
+Ocupa 2/3 del ancho.
 
-Here are some ideas to get you started:
+</td>
+<td width="33%" valign="top" align="center">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img src="https://raw.githubusercontent.com/TU_USUARIO/TU_USUARIO/main/dist/pet.gif" width="150" />
+
+</td>
+</tr>
+</table>
