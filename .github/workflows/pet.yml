@@ -1,0 +1,38 @@
+name: Update pet
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # cada 30 min (GitHub puede retrasarlo un poco en horas de mucho trafico)
+  workflow_dispatch:          # para probarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update-pet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests pillow
+
+      - name: Choose sprite based on today's activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/pet.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/pet.gif
+          git diff --staged --quiet || git commit -m "Update pet state"
+          git push
