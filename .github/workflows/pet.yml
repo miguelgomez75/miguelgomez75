@@ -27,12 +27,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USERNAME: ${{ github.repository_owner }}
+          # PET_TITLE: "Mi actividad de hoy"   # descomenta para personalizar el titulo
         run: python scripts/pet.py
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/pet.gif
+          git add dist/pet.gif dist/pet-status-light.svg dist/pet-status-dark.svg
           git diff --staged --quiet || git commit -m "Update pet state"
           git push
