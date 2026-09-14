@@ -1,6 +1,7 @@
 name: Update pet
 
 on:
+  push:
   schedule:
     - cron: "*/5 * * * *"   # cada 5 min (GitHub puede retrasarlo un poco en horas de mucho trafico)
   workflow_dispatch:          # para probarlo a mano desde la pestaña Actions
