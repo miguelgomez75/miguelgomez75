@@ -137,7 +137,7 @@ def load_skin_config():
 
 
 def _md(date_str):
-    """'MM-DD' -> (mes, dia) como enteros, para comparar sin el ano."""
+    """'MM-DD' -> (mes, dia) como enteros, para comparar sin el año."""
     m, d = date_str.split("-")
     return int(m), int(d)
 
