@@ -1,0 +1,15 @@
+{
+  "default": "Sylveon",
+  "seasons": [
+    { "skin": "Eevee", "from": "11-18", "to": "11-22" },
+    { "skin": "Vaporeon", "from": "03-20", "to": "03-24" },
+    { "skin": "Flareon", "from": "07-23", "to": "07-27" },
+    { "skin": "Jolteon", "from": "12-29", "to": "01-02" },
+    { "skin": "Umbreon", "from": "10-29", "to": "11-02" },
+    { "skin": "Espeon", "from": "06-19", "to": "06-23" },
+    { "skin": "Glaceon", "from": "12-23", "to": "12-27" },
+    { "skin": "Leafeon", "from": "04-20", "to": "04-24" },
+    { "skin": "Everyone", "from": "02-25", "to": "02-29" },
+  ],
+  "override": null
+}
