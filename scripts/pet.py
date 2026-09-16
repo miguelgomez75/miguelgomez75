@@ -24,11 +24,13 @@ GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 USERNAME = os.environ["GH_USERNAME"]
 
 GRAPHQL_URL = "https://api.github.com/graphql"
-SPRITE_DIR = "assets/sprites"
+SPRITE_BASE_DIR = "assets/sprites"
+SKINS_CONFIG_PATH = "skins.json"
 OUTPUT_PATH = "dist/pet.gif"
 HISTORY_PATH = "dist/history.json"
 HISTORY_DAYS_KEPT = 30  # cuantos dias de historial intradia conservamos
 CANDIDATE_EXTS = [".gif", ".png", ".jpg", ".jpeg"]
+DEFAULT_SKIN = "default"
 
 # --- Umbrales de commits DE HOY para cada estado ---
 # Ajusta estos numeros a tu gusto. STATE_ORDER define el orden de menos
@@ -116,26 +118,88 @@ def mood_from_count(count):
     return state
 
 
-def find_sprite(state):
-    for ext in CANDIDATE_EXTS:
-        path = os.path.join(SPRITE_DIR, state + ext)
-        if os.path.isfile(path):
-            return path
-    return None
+# ─────────────────────────── Skins (temporadas) ───────────────────────────
+
+def load_skin_config():
+    """Lee skins.json de la raiz del repo. Si no existe o esta mal formado,
+    se usa solo el skin 'default' sin temporadas."""
+    fallback = {"default": DEFAULT_SKIN, "seasons": [], "override": None}
+    if not os.path.isfile(SKINS_CONFIG_PATH):
+        return fallback
+    try:
+        with open(SKINS_CONFIG_PATH) as f:
+            cfg = json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"AVISO: skins.json invalido ({e}), uso solo 'default'.", file=sys.stderr)
+        return fallback
+    fallback.update(cfg)
+    return fallback
 
 
-def export_sprite(state):
-    src = find_sprite(state)
+def _md(date_str):
+    """'MM-DD' -> (mes, dia) como enteros, para comparar sin el ano."""
+    m, d = date_str.split("-")
+    return int(m), int(d)
+
+
+def date_in_range(today, from_str, to_str):
+    """True si today cae dentro del rango [from_str, to_str] (formato
+    'MM-DD', sin ano, se repite cada ano). Soporta rangos que cruzan
+    fin de ano, p.ej. de '12-20' a '01-05'."""
+    f, t = _md(from_str), _md(to_str)
+    now = (today.month, today.day)
+    if f <= t:
+        return f <= now <= t
+    return now >= f or now <= t  # el rango cruza el 31 de diciembre
+
+
+def resolve_skin(cfg, today):
+    """Decide que skin usar hoy: override manual > temporada por fecha > default."""
+    override = cfg.get("override")
+    if override:
+        return override, "override manual"
+
+    for season in cfg.get("seasons", []):
+        try:
+            if date_in_range(today, season["from"], season["to"]):
+                return season["skin"], f"temporada ({season['from']} a {season['to']})"
+        except (KeyError, ValueError):
+            print(f"AVISO: entrada de temporada mal formada en skins.json: {season}", file=sys.stderr)
+
+    return cfg.get("default", DEFAULT_SKIN), "skin por defecto"
+
+
+def find_sprite(state, skin):
+    """Busca el sprite del estado dentro de la carpeta del skin activo.
+    Si no existe ahi, cae al skin 'default' (para que un skin de
+    temporada no tenga que incluir los 6 estados si no quieres)."""
+    for candidate_skin in [skin, DEFAULT_SKIN]:
+        for ext in CANDIDATE_EXTS:
+            path = os.path.join(SPRITE_BASE_DIR, candidate_skin, state + ext)
+            if os.path.isfile(path):
+                return path, candidate_skin
+    return None, None
+
+
+def export_sprite(state, skin):
+    src, used_skin = find_sprite(state, skin)
     os.makedirs("dist", exist_ok=True)
 
     if src is None:
         print(
-            f"AVISO: no encontre sprite para el estado '{state}' en "
-            f"{SPRITE_DIR}/ (busque {', '.join(state + e for e in CANDIDATE_EXTS)}). "
+            f"AVISO: no encontre sprite para el estado '{state}' ni en el skin "
+            f"'{skin}' ni en '{DEFAULT_SKIN}' dentro de {SPRITE_BASE_DIR}/. "
             "Sube esa imagen y vuelve a ejecutar el workflow.",
             file=sys.stderr,
         )
-        return False
+        return False, None
+
+    if used_skin != skin:
+        print(
+            f"AVISO: el skin '{skin}' no tiene sprite para '{state}', "
+            f"uso el de '{DEFAULT_SKIN}' como respaldo.",
+            file=sys.stderr,
+        )
 
     if src.lower().endswith(".gif"):
         shutil.copyfile(src, OUTPUT_PATH)
@@ -144,7 +208,7 @@ def export_sprite(state):
         img = img.convert("RGBA") if "A" in img.mode else img.convert("RGB")
         img.save(OUTPUT_PATH, format="GIF")
 
-    return True
+    return True, used_skin
 
 
 def build_status_svg(state, count, dark):
@@ -443,14 +507,18 @@ def main():
     count = today_entry["contributionCount"]
     mood = mood_from_count(count)
 
-    ok = export_sprite(mood)
+    skin_cfg = load_skin_config()
+    skin, skin_reason = resolve_skin(skin_cfg, today)
+
+    ok, used_skin = export_sprite(mood, skin)
     export_status(mood, count)
     export_stats(days, today)
     logged = update_history(mood, count, today)
 
     status = "ok" if ok else "sprite faltante"
     hist = "nueva entrada en history.json" if logged else "sin cambios en history.json"
-    print(f"fecha={today.isoformat()} commits_hoy={count} estado={mood} ({status}) [{hist}]")
+    skin_info = f"skin={skin} ({skin_reason})" + (f", sprite servido desde '{used_skin}'" if used_skin and used_skin != skin else "")
+    print(f"fecha={today.isoformat()} commits_hoy={count} estado={mood} ({status}) [{hist}] {skin_info}")
 
 
 if __name__ == "__main__":
