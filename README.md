@@ -11,9 +11,10 @@ vuelve a dormirse y empieza de nuevo.
 
 1. Copia [`scripts/pet.py`](https://github.com/miguelgomez75/miguelgomez75/blob/main/scripts/pet.py) y [`.github/workflows/pet.yml`](https://github.com/miguelgomez75/miguelgomez75/blob/main/.github/workflows/pet.yml) a tu repo `TU_USUARIO/TU_USUARIO`.
 2. Sube tus propios sprites (`.gif`/`.png`/`.jpg`) a `assets/sprites/`, con los nombres de cada estado.
-3. En **Settings → Actions → General**, activa *"Read and write permissions"*.
-4. Ejecuta el workflow una vez desde la pestaña **Actions**.
-5. Pega la tabla de tu README apuntando a `dist/pet.gif` y `dist/pet-status-*.svg`.
+3. Si quieres poner distintos sprites en ciertas fechas analiza [`Skins.json`](https://github.com/miguelgomez75/miguelgomez75/blob/main/Skins.json) y asegúrate de que los sprites estén en directorios con los nombres adecuados
+4. En **Settings → Actions → General**, activa *"Read and write permissions"*.
+5. Ejecuta el workflow una vez desde la pestaña **Actions**.
+6. Pega la tabla de tu README apuntando a `dist/pet.gif` y `dist/pet-status-*.svg`.
 
 </td>
 <td width="33%" valign="top" align="center">
