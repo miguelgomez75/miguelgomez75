@@ -22,6 +22,8 @@ vuelve a dormirse y empieza de nuevo.
 
 <img alt="Estado de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-status-dark.svg" width="230" />
 
+<img alt="historial de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-stats-dark.svg" width="230"/>
+
 </td>
 </tr>
 </table>
