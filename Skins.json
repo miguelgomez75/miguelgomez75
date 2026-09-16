@@ -1,5 +1,5 @@
 {
-  "default": "Sylveon",
+  "default": "default",
   "seasons": [
     { "skin": "Eevee", "from": "11-18", "to": "11-22" },
     { "skin": "Vaporeon", "from": "03-20", "to": "03-24" },
