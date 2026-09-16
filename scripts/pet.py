@@ -30,7 +30,7 @@ OUTPUT_PATH = "dist/pet.gif"
 HISTORY_PATH = "dist/history.json"
 HISTORY_DAYS_KEPT = 30  # cuantos dias de historial intradia conservamos
 CANDIDATE_EXTS = [".gif", ".png", ".jpg", ".jpeg"]
-DEFAULT_SKIN = "default"
+DEFAULT_SKIN = "Sylveon"
 
 # --- Umbrales de commits DE HOY para cada estado ---
 # Ajusta estos numeros a tu gusto. STATE_ORDER define el orden de menos
