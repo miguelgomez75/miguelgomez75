@@ -11,5 +11,5 @@
     { "skin": "Glaceon", "from": "12-23", "to": "12-27", "label": "Glaceon (Navidad)" },
     { "skin": "Jolteon", "from": "12-29", "to": "01-02", "label": "Jolteon (Nochevieja)" }
   ],
-  "override": "Umbreon"
+  "override": null
 }
