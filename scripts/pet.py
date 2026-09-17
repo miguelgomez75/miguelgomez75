@@ -459,28 +459,28 @@ def export_stats(days, today):
 
 # Color representativo de cada skin para la línea de tiempo
 SKIN_COLOR = {
-    "sylveon":  "#f4a7d0",
-    "todos":    "#b0c4de",
-    "vaporeon": "#5bc8f5",
-    "leafeon":  "#78c85b",
-    "espeon":   "#c084e8",
-    "flareon":  "#f97316",
-    "umbreon":  "#4a4a6a",
-    "eevee":    "#c8a87a",
-    "glaceon":  "#a8d8ea",
-    "jolteon":  "#f2cc60",
+    "Sylveon":  "#f4a7d0",
+    "Todos":    "#b0c4de",
+    "Vaporeon": "#5bc8f5",
+    "Leafeon":  "#78c85b",
+    "Espeon":   "#c084e8",
+    "Flareon":  "#f97316",
+    "Umbreon":  "#4a4a6a",
+    "Eevee":    "#c8a87a",
+    "Glaceon":  "#a8d8ea",
+    "Jolteon":  "#f2cc60",
 }
 SKIN_LABEL = {
-    "sylveon":  "Sylveon",
-    "todos":    "Todos",
-    "vaporeon": "Vaporeon",
-    "leafeon":  "Leafeon",
-    "espeon":   "Espeon",
-    "flareon":  "Flareon",
-    "umbreon":  "Umbreon",
-    "eevee":    "Eevee",
-    "glaceon":  "Glaceon",
-    "jolteon":  "Jolteon",
+    "Sylveon":  "Sylveon",
+    "Todos":    "Todos",
+    "Vaporeon": "Vaporeon",
+    "Leafeon":  "Leafeon",
+    "Espeon":   "Espeon",
+    "Flareon":  "Flareon",
+    "Umbreon":  "Umbreon",
+    "Eevee":    "Eevee",
+    "Glaceon":  "Glaceon",
+    "Jolteon":  "Jolteon",
 }
 
 
