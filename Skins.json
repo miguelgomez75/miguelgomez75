@@ -1,15 +1,15 @@
 {
-  "default": "sylveon",
+  "default": "Sylveon",
   "seasons": [
-    { "skin": "todos",   "from": "02-25", "to": "03-01", "label": "Todos (Pokémon Day)" },
-    { "skin": "vaporeon","from": "03-20", "to": "03-24", "label": "Vaporeon (Día del Agua)" },
-    { "skin": "leafeon", "from": "04-20", "to": "04-24", "label": "Leafeon (Día de la Tierra)" },
-    { "skin": "espeon",  "from": "06-19", "to": "06-23", "label": "Espeon (Solsticio de Verano)" },
-    { "skin": "flareon", "from": "07-23", "to": "07-27", "label": "Flareon (Santiago)" },
-    { "skin": "umbreon", "from": "10-29", "to": "11-02", "label": "Umbreon (Halloween)" },
-    { "skin": "eevee",   "from": "11-18", "to": "11-22", "label": "Eevee (Día del Niño)" },
-    { "skin": "glaceon", "from": "12-23", "to": "12-27", "label": "Glaceon (Navidad)" },
-    { "skin": "jolteon", "from": "12-29", "to": "01-02", "label": "Jolteon (Nochevieja)" }
+    { "skin": "Todos",   "from": "02-25", "to": "03-01", "label": "Todos (Pokémon Day)" },
+    { "skin": "Vaporeon","from": "03-20", "to": "03-24", "label": "Vaporeon (Día del Agua)" },
+    { "skin": "Leafeon", "from": "04-20", "to": "04-24", "label": "Leafeon (Día de la Tierra)" },
+    { "skin": "Espeon",  "from": "06-19", "to": "06-23", "label": "Espeon (Solsticio de Verano)" },
+    { "skin": "Flareon", "from": "07-23", "to": "07-27", "label": "Flareon (Santiago)" },
+    { "skin": "Umbreon", "from": "10-29", "to": "11-02", "label": "Umbreon (Halloween)" },
+    { "skin": "Eevee",   "from": "11-18", "to": "11-22", "label": "Eevee (Día del Niño)" },
+    { "skin": "Glaceon", "from": "12-23", "to": "12-27", "label": "Glaceon (Navidad)" },
+    { "skin": "Jolteon", "from": "12-29", "to": "01-02", "label": "Jolteon (Nochevieja)" }
   ],
   "override": null
 }
