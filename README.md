@@ -25,6 +25,8 @@ vuelve a dormirse y empieza de nuevo.
 
 <img alt="historial de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-stats-dark.svg" width="230"/>
 
+<img alt="Estaciones y Skins de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-season-dark.svg" width="230"/>
+
 </td>
 </tr>
 </table>
