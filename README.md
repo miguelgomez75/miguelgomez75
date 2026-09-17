@@ -19,13 +19,13 @@ vuelve a dormirse y empieza de nuevo.
 </td>
 <td width="33%" valign="top" align="center">
 
-<img src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet.gif" width="150" /><br/>
+<img src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet.gif" width="350" /><br/>
 
-<img alt="Estado de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-status-dark.svg" width="230" />
+<img alt="Estado de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-status-dark.svg" width="330" />
 
-<img alt="historial de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-stats-dark.svg" width="230"/>
+<img alt="historial de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-stats-dark.svg" width="330"/>
 
-<img alt="Estaciones y Skins de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-season-dark.svg" width="230"/>
+<img alt="Estaciones y Skins de la mascota" src="https://raw.githubusercontent.com/miguelgomez75/miguelgomez75/main/dist/pet-season-dark.svg" width="330"/>
 
 </td>
 </tr>
