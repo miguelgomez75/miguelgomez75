@@ -30,7 +30,7 @@ OUTPUT_PATH = "dist/pet.gif"
 HISTORY_PATH = "dist/history.json"
 HISTORY_DAYS_KEPT = 30  # cuantos dias de historial intradia conservamos
 CANDIDATE_EXTS = [".gif", ".png", ".jpg", ".jpeg"]
-DEFAULT_SKIN = "Sylveon"
+DEFAULT_SKIN = "default"
 
 # --- Umbrales de commits DE HOY para cada estado ---
 # Ajusta estos numeros a tu gusto. STATE_ORDER define el orden de menos
@@ -137,7 +137,7 @@ def load_skin_config():
 
 
 def _md(date_str):
-    """'MM-DD' -> (mes, dia) como enteros, para comparar sin el año."""
+    """'MM-DD' -> (mes, dia) como enteros, para comparar sin el ano."""
     m, d = date_str.split("-")
     return int(m), int(d)
 
@@ -455,7 +455,190 @@ def export_stats(days, today):
         f.write(build_stats_svg(days, today, dark=True))
 
 
-# ─────────────────────────── Historial intradia ───────────────────────────
+# ─────────────────────────── Tarjeta de temporada ───────────────────────────
+
+# Color representativo de cada skin para la línea de tiempo
+SKIN_COLOR = {
+    "sylveon":  "#f4a7d0",
+    "todos":    "#b0c4de",
+    "vaporeon": "#5bc8f5",
+    "leafeon":  "#78c85b",
+    "espeon":   "#c084e8",
+    "flareon":  "#f97316",
+    "umbreon":  "#4a4a6a",
+    "eevee":    "#c8a87a",
+    "glaceon":  "#a8d8ea",
+    "jolteon":  "#f2cc60",
+}
+SKIN_LABEL = {
+    "sylveon":  "Sylveon",
+    "todos":    "Todos",
+    "vaporeon": "Vaporeon",
+    "leafeon":  "Leafeon",
+    "espeon":   "Espeon",
+    "flareon":  "Flareon",
+    "umbreon":  "Umbreon",
+    "eevee":    "Eevee",
+    "glaceon":  "Glaceon",
+    "jolteon":  "Jolteon",
+}
+
+
+def iter_year(year, cfg):
+    """Devuelve una lista de 365/366 entradas (date, skin) para el año dado,
+    usando la misma lógica de resolve_skin pero sin el campo 'override'."""
+    start = datetime.date(year, 1, 1)
+    end   = datetime.date(year, 12, 31)
+    result = []
+    d = start
+    while d <= end:
+        skin = cfg.get("default", "sylveon")
+        for season in cfg.get("seasons", []):
+            try:
+                if date_in_range(d, season["from"], season["to"]):
+                    skin = season["skin"]
+                    break
+            except (KeyError, ValueError):
+                pass
+        result.append((d, skin))
+        d += datetime.timedelta(days=1)
+    return result
+
+
+def find_next_change(today, year_map):
+    """A partir de hoy, busca el próximo día en que cambia el skin.
+    Busca hasta 2 años hacia adelante por si today está muy cerca del fin de año."""
+    current_skin = next((s for d, s in year_map if d == today), None)
+    for d, skin in year_map:
+        if d > today and skin != current_skin:
+            return d, skin
+    return None, None
+
+
+def build_season_svg(cfg, today, dark):
+    bg         = "#0d1117" if dark else "#ffffff"
+    text_color = "#c9d1d9" if dark else "#24292f"
+    muted      = "#8b949e" if dark else "#57606a"
+    track_bg   = "#30363d" if dark else "#e1e4e8"
+
+    width = 420
+    # Construimos el mapa del año actual + siguiente (para next_change)
+    year_map_this = iter_year(today.year, cfg)
+    year_map_next = iter_year(today.year + 1, cfg)
+    combined = year_map_this + year_map_next
+
+    current_skin, current_reason = resolve_skin(cfg, today)
+    next_date, next_skin = find_next_change(today, combined)
+
+    days_left = (next_date - today).days if next_date else None
+
+    # ── Línea de tiempo anual ──
+    # Agrupamos el año en segmentos continuos del mismo skin
+    segments = []
+    for d, skin in year_map_this:
+        if segments and segments[-1][2] == skin:
+            segments[-1][1] = d
+        else:
+            segments.append([d, d, skin])
+
+    total_days = 366 if (today.year % 4 == 0 and (today.year % 100 != 0 or today.year % 400 == 0)) else 365
+    bar_x, bar_y, bar_w, bar_h = 16, 0, width - 32, 12
+
+    elems = []
+    y = 22
+    elems.append(
+        f'<text x="{width/2}" y="{y}" font-size="14" font-weight="bold" fill="{text_color}" '
+        f'font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">{TITLE} — temporadas</text>'
+    )
+    y += 20
+
+    # Skin activo
+    active_color = SKIN_COLOR.get(current_skin, "#888")
+    active_label = SKIN_LABEL.get(current_skin, current_skin)
+    reason_text  = "override manual" if cfg.get("override") else ("temporada" if current_skin != cfg.get("default") else "skin por defecto")
+    elems.append(
+        f'<text x="{width/2}" y="{y}" font-size="12.5" fill="{text_color}" '
+        f'font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">'
+        f'Ahora: <tspan font-weight="bold" fill="{active_color}">{active_label}</tspan>'
+        f' <tspan font-size="11" fill="{muted}">({reason_text})</tspan></text>'
+    )
+    y += 18
+
+    # Próximo cambio
+    if next_date and next_skin:
+        next_color = SKIN_COLOR.get(next_skin, "#888")
+        next_label = SKIN_LABEL.get(next_skin, next_skin)
+        elems.append(
+            f'<text x="{width/2}" y="{y}" font-size="11.5" fill="{muted}" '
+            f'font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">'
+            f'Próximo: <tspan fill="{next_color}" font-weight="bold">{next_label}</tspan>'
+            f' el {next_date.day}/{next_date.month} '
+            f'<tspan>({days_left} día{"s" if days_left != 1 else ""})</tspan></text>'
+        )
+    y += 18
+
+    # Barra de año
+    bar_y = y
+    elems.append(
+        f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="6" fill="{track_bg}"/>'
+    )
+    jan1 = datetime.date(today.year, 1, 1)
+    for seg_start, seg_end, skin in segments:
+        day_start = (seg_start - jan1).days
+        day_end   = (seg_end   - jan1).days + 1
+        sx = bar_x + bar_w * day_start / total_days
+        sw = bar_w * (day_end - day_start) / total_days
+        color = SKIN_COLOR.get(skin, "#888")
+        r = "6" if day_start == 0 else ("0" if day_end < total_days else "6")
+        elems.append(
+            f'<rect x="{sx:.1f}" y="{bar_y}" width="{sw:.1f}" height="{bar_h}" '
+            f'rx="{r}" fill="{color}"/>'
+        )
+
+    # Marcador de hoy
+    today_x = bar_x + bar_w * (today - jan1).days / total_days + bar_w / total_days / 2
+    elems.append(
+        f'<line x1="{today_x:.1f}" y1="{bar_y - 3}" x2="{today_x:.1f}" y2="{bar_y + bar_h + 3}" '
+        f'stroke="{text_color}" stroke-width="2" stroke-linecap="round"/>'
+    )
+    y = bar_y + bar_h + 14
+
+    # Leyenda compacta: dos columnas
+    legend_skins = [s for s in SKIN_LABEL if s in {sk for _, sk in year_map_this}]
+    dot_r, col_w = 5, (width - 32) // 2
+    for i, skin in enumerate(legend_skins):
+        col = i % 2
+        row = i // 2
+        lx = bar_x + col * col_w
+        ly = y + row * 16
+        color = SKIN_COLOR.get(skin, "#888")
+        label = SKIN_LABEL.get(skin, skin)
+        elems.append(f'<circle cx="{lx + dot_r}" cy="{ly - 3}" r="{dot_r}" fill="{color}"/>')
+        elems.append(
+            f'<text x="{lx + dot_r * 2 + 4}" y="{ly}" font-size="11" fill="{muted}" '
+            f'font-family="Segoe UI, Helvetica, Arial, sans-serif">{label}</text>'
+        )
+
+    legend_rows = -(-len(legend_skins) // 2)
+    height = y + legend_rows * 16 + 8
+
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height:.0f}" '
+        f'viewBox="0 0 {width} {height:.0f}">'
+        f'<rect width="{width}" height="{height:.0f}" rx="8" fill="{bg}"/>'
+        + "".join(elems)
+        + "</svg>"
+    )
+
+
+def export_season(cfg, today):
+    os.makedirs("dist", exist_ok=True)
+    with open("dist/pet-season-light.svg", "w") as f:
+        f.write(build_season_svg(cfg, today, dark=False))
+    with open("dist/pet-season-dark.svg", "w") as f:
+        f.write(build_season_svg(cfg, today, dark=True))
+
+
 
 def load_history():
     if not os.path.isfile(HISTORY_PATH):
@@ -513,6 +696,7 @@ def main():
     ok, used_skin = export_sprite(mood, skin)
     export_status(mood, count)
     export_stats(days, today)
+    export_season(skin_cfg, today)
     logged = update_history(mood, count, today)
 
     status = "ok" if ok else "sprite faltante"
