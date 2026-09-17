@@ -125,12 +125,14 @@ def load_skin_config():
     se usa solo el skin 'default' sin temporadas."""
     fallback = {"default": DEFAULT_SKIN, "seasons": [], "override": None}
     if not os.path.isfile(SKINS_CONFIG_PATH):
+        print(f"INFO: {SKINS_CONFIG_PATH} no encontrado, usando skin '{DEFAULT_SKIN}' sin temporadas.", file=sys.stderr)
         return fallback
     try:
         with open(SKINS_CONFIG_PATH) as f:
             cfg = json.load(f)
+        print(f"INFO: {SKINS_CONFIG_PATH} leido correctamente. default='{cfg.get('default')}', {len(cfg.get('seasons', []))} temporadas, override={cfg.get('override')}", file=sys.stderr)
     except (json.JSONDecodeError, OSError) as e:
-        print(f"AVISO: skins.json invalido ({e}), uso solo 'default'.", file=sys.stderr)
+        print(f"AVISO: {SKINS_CONFIG_PATH} invalido ({e}), usando skin '{DEFAULT_SKIN}' sin temporadas.", file=sys.stderr)
         return fallback
     fallback.update(cfg)
     return fallback
@@ -169,11 +171,12 @@ def resolve_skin(cfg, today):
     return cfg.get("default", DEFAULT_SKIN), "skin por defecto"
 
 
-def find_sprite(state, skin):
+def find_sprite(state, skin, default_skin):
     """Busca el sprite del estado dentro de la carpeta del skin activo.
-    Si no existe ahi, cae al skin 'default' (para que un skin de
-    temporada no tenga que incluir los 6 estados si no quieres)."""
-    for candidate_skin in [skin, DEFAULT_SKIN]:
+    Si no existe ahi, cae al skin default del JSON (no a la constante
+    interna DEFAULT_SKIN), para que el fallback use la carpeta correcta."""
+    candidates = [skin] if skin == default_skin else [skin, default_skin]
+    for candidate_skin in candidates:
         for ext in CANDIDATE_EXTS:
             path = os.path.join(SPRITE_BASE_DIR, candidate_skin, state + ext)
             if os.path.isfile(path):
@@ -181,14 +184,14 @@ def find_sprite(state, skin):
     return None, None
 
 
-def export_sprite(state, skin):
-    src, used_skin = find_sprite(state, skin)
+def export_sprite(state, skin, default_skin):
+    src, used_skin = find_sprite(state, skin, default_skin)
     os.makedirs("dist", exist_ok=True)
 
     if src is None:
         print(
             f"AVISO: no encontre sprite para el estado '{state}' ni en el skin "
-            f"'{skin}' ni en '{DEFAULT_SKIN}' dentro de {SPRITE_BASE_DIR}/. "
+            f"'{skin}' ni en el default '{default_skin}' dentro de {SPRITE_BASE_DIR}/. "
             "Sube esa imagen y vuelve a ejecutar el workflow.",
             file=sys.stderr,
         )
@@ -197,7 +200,7 @@ def export_sprite(state, skin):
     if used_skin != skin:
         print(
             f"AVISO: el skin '{skin}' no tiene sprite para '{state}', "
-            f"uso el de '{DEFAULT_SKIN}' como respaldo.",
+            f"uso el de '{default_skin}' como respaldo.",
             file=sys.stderr,
         )
 
@@ -692,8 +695,9 @@ def main():
 
     skin_cfg = load_skin_config()
     skin, skin_reason = resolve_skin(skin_cfg, today)
+    default_skin = skin_cfg.get("default", DEFAULT_SKIN)
 
-    ok, used_skin = export_sprite(mood, skin)
+    ok, used_skin = export_sprite(mood, skin, default_skin)
     export_status(mood, count)
     export_stats(days, today)
     export_season(skin_cfg, today)
