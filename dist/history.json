@@ -58,5 +58,11 @@
     "date": "2026-09-18",
     "mood": "sleeping",
     "count": 0
+  },
+  {
+    "ts": "2026-09-18T07:25:15Z",
+    "date": "2026-09-18",
+    "mood": "waking_up",
+    "count": 1
   }
 ]
