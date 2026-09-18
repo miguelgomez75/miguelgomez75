@@ -1,57 +1,57 @@
 ### Eevee
-- [ ] sleeping
+- [X] sleeping
 - [ ] waking_up
-- [ ] awake
-- [ ] curious
-- [ ] happy
-- [ ] hyper
+- [X] awake
+- [X] curious
+- [X] happy
+- [X] hyper
 ### Vaporeon
-- [ ] sleeping
-- [ ] waking_up
-- [ ] awake
-- [ ] curious
+- [X] sleeping
+- [X] waking_up
+- [X] awake
+- [X] curious
 - [ ] happy
 - [ ] hyper
 ### Jolteon
-- [ ] sleeping
-- [ ] waking_up
-- [ ] awake
+- [X] sleeping
+- [X] waking_up
+- [X] awake
 - [ ] curious
 - [ ] happy
 - [ ] hyper
 ### Flareon
-- [ ] sleeping
-- [ ] waking_up
-- [ ] awake
+- [X] sleeping
+- [X] waking_up
+- [X] awake
 - [ ] curious
 - [ ] happy
-- [ ] hyper
+- [X] hyper
 ### Espeon
-- [ ] sleeping
+- [X] sleeping
 - [ ] waking_up
-- [ ] awake
+- [X] awake
 - [ ] curious
 - [ ] happy
 - [ ] hyper
 ### Umbreon
-- [ ] sleeping
+- [X] sleeping
 - [ ] waking_up
-- [ ] awake
-- [ ] curious
-- [ ] happy
-- [ ] hyper
+- [X] awake
+- [X] curious
+- [X] happy
+- [X] hyper
 ### Leafeon
-- [ ] sleeping
-- [ ] waking_up
-- [ ] awake
+- [X] sleeping
+- [X] waking_up
+- [X] awake
 - [ ] curious
 - [ ] happy
 - [ ] hyper
 ### Glaceon
-- [ ] sleeping
+- [X] sleeping
 - [ ] waking_up
-- [ ] awake
-- [ ] curious
+- [X] awake
+- [X] curious
 - [ ] happy
 - [ ] hyper
 ### Sylveon
@@ -64,7 +64,7 @@
 ### Todos
 - [ ] sleeping
 - [ ] waking_up
-- [ ] awake
+- [X] awake
 - [ ] curious
 - [ ] happy
 - [ ] hyper
