@@ -16,6 +16,8 @@ vuelve a dormirse y empieza de nuevo.
 5. Ejecuta el workflow una vez desde la pestaña **Actions**.
 6. Pega la tabla de tu README apuntando a `dist/pet.gif` y `dist/pet-status-*.svg`.
 
+P.D. Puedes ver las ejecuciones en el [menú actions de tu repo de github](https://github.com/miguelgomez75/miguelgomez75/actions) y recuerda en los enlaces cambiar mi nombre de usuario por el tuyo
+
 </td>
 <td width="33%" valign="top" align="center">
 
