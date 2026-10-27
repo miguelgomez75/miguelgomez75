@@ -1,388 +1,1195 @@
 <details>
 <summary>Eevee</summary>
 <br>
-  Frases sin ordenar:
-  
-    ¡Eevee!
-    ¡Haiii, haiii!
-    ¡Wiii!
-    ¡Corre, corre, corre!
-    ¡Juguemos, juguemos!
-    ¡Otra vez, otra vez!
-    ¡Mira, mira, mira!
-    ¡Yo primero!
-    ¡Jijiji, no me atrapas!
-    ¡Qué divertido!
-    ¡Quiero jugar más!
-    ¡Un poquito más, porfi!
-    ¡Vamos, vamos, vamos!
-    ¡Yupi, yupi!
-    ¡Qué emoción!
-    ¡Uuuh, qué es eso!
-    ¡Quiero verlo!
-    ¡Mira cómo salto!
-    ¡Soy rapidísimo!
-    ¡Otra vez, otra vez, otra vez!
-    ¿Jugamos a la pelota?
-    ¡Tengo hambre, tengo mucha hambre!
-    ¡Ñam ñam ñam!
-    ¡Qué rico, qué rico!
-    ¡Cosquillas, cosquillas!
-    ¡Jijiji, otra!
-    ¡No quiero dormir todavía!
-    Bostezo... bueno, un ratito
-    ¡Buenos días, buenos días!
-    ¡Hoy vamos a jugar todo el día!
-    ¡Eres el mejor!
-    ¡Lo logramos, lo logramos!
-    ¡Sí, sí, sí!
-    ¡Te quiero mucho, mucho, mucho!
 
-  <br>
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Quiero jugar más!
+¡Un poquito más, porfi!
+¡Quiero verlo!
+¿Jugamos a la pelota?
+¡Qué bien huele, qué bien huele!
+¡Qué buena pinta, qué buena pinta!
+¡No quiero dormir todavía!
+¡Hoy vamos a jugar todo el día!
+¡Qué bien lo haces!
+¡Un poquito más, un poquito más!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Corre, corre, corre!
+¡Juguemos, juguemos!
+¡Mira, mira, mira!
+¡Yo primero!
+¡Jijiji, no me atrapas!
+¡Qué divertido!
+¡Vamos, vamos, vamos!
+¡Yupi, yupi!
+¡Qué emoción!
+¡Uuuh, qué es eso!
+¡Mira cómo salto!
+¡Soy rapidísimo!
+¡Uuuh, eso tiene buena pinta!
+¡Lo logramos, lo logramos!
+¡Tú puedes, tú puedes!
+¡Vamos, vamos, que ya casi!
+¡Ánimo, ánimo, ánimo!
+¡Eso, eso, así!
+¡Yo te animo desde aquí!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Bostezo... bueno, un ratito
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Haiii, haiii!
+¡Otra vez, otra vez!
+¡Jijiji, otra!
+¡Hola, hola, hola!
+¡Eres el mejor!
+¡Te quiero mucho, mucho, mucho!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Eevee!
+¡Wiii!
+¡Otra vez, otra vez, otra vez!
+¡Cosquillas, cosquillas!
+¡Sí, sí, sí!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Vaporeon</summary>
 <br>
-  Frases sin ordenar:
-  
-    ¡Vaporeon!
-    ¡Eh, eh, hola!
-    ¡Esto se va a poner genial!
-    ¡Que empiece la fiesta!
-    ¡Vamos a divertirnos!
-    ¡Chapuzón, chapuzón!
-    ¡Al agua, patos!
-    ¡Qué buena onda!
-    ¡Esto es vida!
-    ¡Sube ese ánimo!
-    ¡Hoy lo damos todo!
-    ¡Vamos con todo!
-    ¡Qué ritmazo!
-    ¡A bailar!
-    ¡Mueve esa colita!
-    ¡Splash!
-    ¡Uuuh, qué planazo!
-    ¡Eso es, así se hace!
-    ¡Estás on fire! Bueno, on water
-    ¡Menuda fiesta!
-    ¡Que no pare la música!
-    ¡Una más y nos vamos!
-    ¡Qué noche tan buena!
-    ¡Ven aquí, únete!
-    ¡Brindemos por eso!
-    ¡Hoy se celebra!
-    ¡Vaya nivelazo!
-    ¡Lo has clavado!
-    ¡Qué bien lo estamos pasando!
-    ¡Relájate y disfruta!
-    ¡Estoy fluyendo, estoy fluyendo!
-    ¡Nada nos para!
-    ¡Menudo equipo hacemos!
-    ¡Buenos días, a por todo!
-    ¡Eres la mejor compañía!
-    ¡Te quiero un montón!
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Vamos a divertirnos!
+¡Qué buena onda!
+¡Esto es vida!
+¡Qué ritmazo!
+¡Mueve esa colita!
+¡Uuuh, qué planazo!
+¡Eso es, así se hace!
+¡Estás on fire! Bueno, on water
+¡Una más y nos vamos!
+¡Qué buen rollo hay hoy!
+¡Ven aquí, únete!
+¡Vaya nivelazo!
+¡Lo has clavado!
+¡Eso tiene una pinta buenísima, que aproveche!
+¡Relájate y disfruta!
+¡Eso es, sigue fluyendo!
+¡Menudo nivel estás mostrando!
+¡Con ese ritmo no hay quien te pare!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Esto se va a poner genial!
+¡Que empiece la fiesta!
+¡Chapuzón, chapuzón!
+¡Al agua, patos!
+¡Sube ese ánimo!
+¡Hoy lo damos todo!
+¡Vamos con todo!
+¡A bailar!
+¡Menuda fiesta!
+¡Que no pare la música!
+¡Brindemos por eso!
+¡Hoy se celebra!
+¡Nada nos para!
+¡Dale con todo, tú puedes!
+¡Vas lanzado, que no pare!
+¡A por todas!
+¡Hoy lo estás petando!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+¡Estoy fluyendo, estoy fluyendo!
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Eh, eh, hola!
+¡Menudo equipo hacemos!
+¡Qué buena vibra!
+¡Eres la mejor compañía!
+¡Te quiero un montón!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Vaporeon!
+¡Splash!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Jolteon</summary>
 <br>
-  Frases sin ordenar:
-  
-    ¡Jolteon!
-    ¡Hola, hola, listo para correr!
-    ¡Vamos, vamos, vamos!
-    ¡Ni te enteras de que paso!
-    ¡A toda velocidad!
-    ¡Zzzap!
-    ¡Cargado y listo!
-    ¡Tres, dos, uno, ya!
-    ¡Esto es pan comido!
-    ¡A que no me alcanzas!
-    ¡Más rápido, más rápido!
-    ¡Siento la energía!
-    ¡Chispas por todas partes!
-    ¡Vamos a calentar!
-    ¡Una vuelta más!
-    ¡Nuevo récord, creo!
-    ¡Eso es ritmo!
-    ¡Así se hace, sigue!
-    ¡No te frenes ahora!
-    ¡Aguanta, que ya llegamos!
-    ¡Qué buena carrera!
-    ¡Casi, casi, casi!
-    ¡Yo voy delante, tú me sigues!
-    ¡Vamos a por la meta!
-    ¡Te toca, dame esa velocidad!
-    ¡Esto me encanta!
-    ¡Un sprint y listo!
-    ¡Qué subidón!
-    ¡Descansa un poco, ahora te toca recuperar!
-    ¡Mañana más y mejor!
-    ¡Buenos días, a entrenar!
-    ¡Hasta la meta!
-    ¡Contigo llego más lejos!
-    ¡Eres un gran compañero de carrera!
-    ¡Te quiero un montón!
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Hola, hola, listo para la acción!
+¡Ni te enteras de que paso!
+¡Cargado y listo!
+¡Esto es pan comido!
+¡Tú puedes con esto!
+¡Vamos a calentar motores!
+¡Eso es ritmo!
+¡Así se hace, sigue!
+¡Buen trabajo!
+¡Eso es velocidad!
+¡Esto me encanta!
+¡Eso tiene muy buena pinta, a recargar energías!
+Tómate un respiro, te lo has ganado
+¡Mañana más y mejor!
+¡Mantén el ritmo, vas genial!
+¡Vas a toda velocidad!
+¡Esa es la actitud!
+¡Qué energía, sigue así!
+¡Tienes fuerza de sobra!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Vamos, vamos, vamos!
+¡A toda velocidad!
+¡A por ello!
+¡Ritmo, ritmo!
+¡Un último empujón!
+¡No pares ahora, vas genial!
+¡Aguanta, que ya casi está!
+¡Casi, casi, casi!
+¡Dale con todo!
+¡Qué subidón!
+¡Hasta el final!
+¡Un último sprint y lo tienes!
+¡Sin frenos, tú puedes!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+¡Siento la energía!
+¡Me sobra energía!
+¡Qué ganas de moverme!
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Contigo llego más lejos!
+¡Eres un gran compañero de equipo!
+¡Te quiero un montón!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Jolteon!
+¡Zzzap!
+¡Chispas por todas partes!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Flareon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Hola...
-    Eh... hola, qué bien que estés aquí
-    Mmm, calentito
-    Me gusta estar cerca de ti
-    Perdón, ¿te he asustado?
-    Soy grande, pero no muerdo
-    Puedes acercarte, no pasa nada
-    Me da un poco de vergüenza...
-    Uf, me estoy poniendo rojo
-    Gracias, de verdad
-    No sé qué decir... gracias
-    Me alegra que te guste
-    Ven, que aquí se está calentito
-    Te cuido, no te preocupes
-    Yo te protejo, si quieres
-    Cuidado, que aquí estás a salvo
-    Puedes apoyarte en mí
-    Soy un poco torpe, pero lo intento
-    Lo he hecho yo... ¿Te gusta?
-    Hehe... qué bien
-    No me mires tanto, que me pongo nervioso
-    Un abrazo... si quieres, claro
-    Mi pelaje es suave, ¿verdad?
-    Qué tranquilidad, me gusta
-    Me gusta cuando estamos así, en silencio
-    Perdón, soy muy grande, ¿verdad?
-    No tengas miedo, soy bueno
-    Siempre estaré aquí
-    Cuenta conmigo, aunque me dé vergüenza decirlo
-    Buenos días... ¿has dormido bien?
-    Buenas noches, que sueñes bonito
-    Me haces muy feliz
-    Eres muy amable conmigo
-    Gracias por quedarte
-    Te quiero mucho... perdón, se me ha escapado
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Puedes acercarte, no pasa nada
+Te cuido, no te preocupes
+Yo te protejo, si quieres
+Cuidado, que aquí estás a salvo
+Eso... tiene muy buena pinta, que aproveche
+Cuenta conmigo, aunque me dé vergüenza decirlo
+¿Has descansado bien?
+Descansa cuando lo necesites, ¿vale?
+Tú puedes... yo creo en ti
+Vas muy bien, de verdad
+Eh... ánimo, lo estás haciendo genial
+Aquí estoy, por si necesitas ánimos
+Sigue, que yo te acompaño
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Qué tranquilidad, me gusta
+Me gusta cuando estamos así, en silencio
+Siempre estaré aquí
+Se te da muy bien... en serio
+Me gusta verte tan concentrado
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Soy grande, pero no muerdo
+Soy un poco torpe, pero lo intento
+Perdón, soy muy grande, ¿verdad?
+No tengas miedo, soy bueno
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Hola...
+Eh... hola, qué bien que estés aquí
+Gracias, de verdad
+No sé qué decir... gracias
+Me alegra que te guste
+Ven, que aquí se está calentito
+Puedes apoyarte en mí
+Hehe... qué bien
+No me mires tanto, que me pongo nervioso
+Un abrazo... si quieres, claro
+Mi pelaje es suave, ¿verdad?
+Eres muy amable conmigo
+Gracias por quedarte
+Te quiero mucho... perdón, se me ha escapado
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Mmm, calentito
+Me gusta estar cerca de ti
+Me da un poco de vergüenza...
+Uf, me estoy poniendo rojo
+Me haces muy feliz
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Perdón, ¿te he asustado?
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Espeon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Buenos días. Me alegra verte
-    Bienvenido, te estaba esperando
-    Qué placer tenerte aquí
-    Todo marcha según lo previsto
-    Lo presentía
-    Interesante
-    Una elección acertada
-    Excelente trabajo
-    Permíteme acompañarte
-    Con mucho gusto
-    Es un honor
-    Me complace verte tan decidido
-    La calma es una virtud
-    Respira, todo saldrá bien
-    Confía en tu criterio
-    Lo veo con claridad
-    Tu esfuerzo no pasa desapercibido
-    Impecable, como siempre
-    Qué velada tan agradable
-    El sol de la mañana es exquisito
-    Permíteme un instante de reflexión
-    Todo a su debido tiempo
-    Has superado mis expectativas
-    Digno de admiración
-    Cuenta con mi apoyo
-    No hay prisa, tómate tu tiempo
-    Un descanso bien merecido
-    Qué elegante resolución
-    Es un placer compartir este momento
-    Gracias por tu compañía
-    Que tengas un excelente día
-    Buenas noches, que descanses plácidamente
-    Estoy a tu lado, siempre
-    Te aprecio más de lo que aparento
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Todo marcha según lo previsto
+Una elección acertada
+Excelente trabajo
+Me complace verte tan decidido
+Respira, todo saldrá bien
+Confía en tu criterio
+Tu esfuerzo no pasa desapercibido
+Impecable, como siempre
+Has superado mis expectativas
+Digno de admiración
+Cuenta con mi apoyo
+No hay prisa, tómate tu tiempo
+Un descanso bien merecido
+Un aroma excelente, que aproveche
+Que tengas un excelente día
+Recuerda descansar cuando lo necesites
+Vas por buen camino
+Tu concentración es admirable
+Sigue con confianza, lo tienes bajo control
+Un trabajo ejemplar
+Persevera, el resultado lo merece
+Cuentas con todo lo necesario
+Lo estás haciendo con gran acierto
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Interesante
+La calma es una virtud
+Qué momento tan agradable
+Qué día tan exquisito
+Permíteme un instante de reflexión
+Qué elegante resolución
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Lo presentía
+Lo veo con claridad
+Todo a su debido tiempo
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Me alegra verte
+Bienvenido, te estaba esperando
+Qué placer tenerte aquí
+Permíteme acompañarte
+Con mucho gusto
+Es un honor
+Es un placer compartir este momento
+Gracias por tu compañía
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Estoy a tu lado, siempre
+Te aprecio más de lo que aparento
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Umbreon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Hola, supongo
-    Ah, eres tú
-    Mm
-    Eso moló, supongo
-    No estuvo mal
-    ¿No deberías descansar?
-    Tampoco es para tanto... vale, sí, estuvo bien
-    Estoy aquí, no te preocupes
-    Bah, no me mires así
-    Lo has hecho bien
-    Mmh, no está mal este sitio
-    Hace buena noche
-    Podrías haberlo hecho peor
-    Sigue, yo vigilo
-    No es que me importe, pero ten cuidado
-    Vale, puedes acariciarme. Solo un poco
-    Umbreon
-    Um... bre
-    Qué tranquilidad
-    Prefiero la noche, es más callada
-    No me esperaba menos de ti
-    Está bien. Más que bien, de hecho
-    Si insistes, me quedo
-    No digas nada, solo quédate un rato
-    Tengo sueño, pero te acompaño
-    Cuenta conmigo. Supongo
-    Ya casi lo tienes
-    Tranquilo, no pasa nada
-    Otra vez será
-    Te estaba esperando. Solo un poco
-    Buenas noches, descansa
-    Buenos días... qué pronto
-    Gracias. No lo repetiré
-    Me alegra que estés aquí
-    No lo diré dos veces: estuvo genial
-    Quédate cerca, anda
-    ._ .
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Hola, supongo
+Ah, eres tú
+Eso moló, supongo
+No estuvo mal
+¿No deberías descansar?
+Estoy aquí, no te preocupes
+Lo has hecho bien
+Podrías haberlo hecho peor
+Sigue, yo vigilo
+No es que me importe, pero ten cuidado
+No me esperaba menos de ti
+Tengo sueño, pero te acompaño
+Cuenta conmigo. Supongo
+Eso que comes tiene buena pinta. Solo digo eso
+Tranquilo, no pasa nada
+Otra vez será
+Descansa un poco, anda
+Sigue así. No lo haces mal
+Concéntrate, que lo tienes
+Vas bien. No te distraigas
+No te rindas ahora, supongo
+Eso ha tenido buena pinta
+Tú a lo tuyo, yo vigilo
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Mm
+Tampoco es para tanto... vale, sí, estuvo bien
+Mmh, no está mal este sitio
+Qué ambiente tan tranquilo
+Qué tranquilidad
+Prefiero la noche, es más callada
+Está bien. Más que bien, de hecho
+Ya estás aquí otra vez... bien
+Lo vas a conseguir. Lo sé
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Bah, no me mires así
+Vale, puedes acariciarme. Solo un poco
+Umbreon
+Um... bre
+Si insistes, me quedo
+No digas nada, solo quédate un rato
+Gracias. No lo repetiré
+No lo diré dos veces: estuvo genial
+Quédate cerca, anda
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Te estaba esperando. Solo un poco
+Me alegra que estés aquí
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Leafeon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Ah... h-hola...
-    Perdón, ¿molesto?
-    Eh... hola, qué bien que vengas
-    Mmm, huele a flores
-    Mira... una florecita
-    Qué bonita es, ¿verdad?
-    Con cuidado, no la pisemos
-    Las flores siempre me hacen sonreír
-    Me gusta el olor a hierba fresca
-    El sol está tan calentito...
-    Shh, escucha el viento entre las hojas
-    Uy... perdón
-    Me da mucha vergüenza...
-    No me mires, por favor... jiji
-    Hehe... gracias
-    Eso me ha hecho muy feliz
-    No sé qué decir...
-    Puedo quedarme cerca, si no te importa
-    Me siento tranquilo contigo
-    Qué suave es la brisa hoy
-    Te he traído una flor... toma
-    Despacito, despacito
-    Un poquito de sol y estoy bien
-    Me gusta cuando estamos en silencio
-    Gracias por ser tan amable
-    No te vayas todavía, por favor
-    Perdón, hablo muy bajito
-    Contigo me siento a salvo
-    Las hojas se mueven, qué bonito
-    Buenos días... ¿has visto cómo brillan las flores?
-    Buenas noches, que sueñes con campos de flores
-    Me haces muy feliz...
-    Gracias por quedarte...
-    Te quiero... perdón, ha salido solo
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Mira... una florecita
+Qué bonita es, ¿verdad?
+Con cuidado, no la pisemos
+Shh, escucha el viento entre las hojas
+Despacito, despacito
+Uy... eso huele muy bien... que aproveche
+¿Has visto cómo brillan las flores?
+Que sueñes con campos de flores... cuando descanses
+Tú puedes... yo lo sé
+Lo estás haciendo muy bien...
+Poco a poco, sin prisa, vas genial
+Ánimo... estoy aquí cerca
+Qué bien te está saliendo...
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Mmm, huele a flores
+Las flores siempre me hacen sonreír
+Me gusta el olor a hierba fresca
+El sol está tan calentito...
+Qué suave es la brisa hoy
+Un poquito de sol y estoy bien
+Me gusta cuando estamos en silencio
+Las hojas se mueven, qué bonito
+Creo en ti, de verdad
+Sigue así... me gusta verte esforzarte
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Perdón, hablo muy bajito
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Ah... h-hola...
+Eh... hola, qué bien que vengas
+No me mires, por favor... jiji
+Hehe... gracias
+Puedo quedarme cerca, si no te importa
+Te he traído una flor... toma
+Gracias por ser tan amable
+No te vayas todavía, por favor
+Gracias por quedarte...
+Te quiero... perdón, ha salido solo
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Me da mucha vergüenza...
+Eso me ha hecho muy feliz
+No sé qué decir...
+Me siento tranquilo contigo
+Contigo me siento a salvo
+Me haces muy feliz...
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Perdón, ¿molesto?
+Uy... perdón
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Glaceon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Buenos días. Qué silencio tan agradable
-    Hola. Me alegra que hayas venido
-    Ha nevado un poco esta noche
-    Ven, siéntate conmigo
-    Disculpa, me cuesta hablar mucho
-    Prefiero escuchar, si no te importa
-    Qué paz hay cuando todo está quieto
-    Mira, cada copo es distinto
-    Se me da bien el silencio
-    Gracias por tu paciencia
-    Es muy amable de tu parte
-    Me hace ilusión que estés aquí
-    Perdona si parezco fría, no lo soy
-    Mi pelaje está frío, pero mi cariño no
-    Con calma, no hay prisa
-    Respira hondo, todo está bien
-    Lo has hecho muy bien, de verdad
-    Estoy orgullosa de ti. Perdón, orgulloso
-    Me gusta cómo suena la escarcha al amanecer
-    Un poco de aire fresco sienta bien
-    Me quedo a tu lado, si te parece
-    No hace falta decir nada
-    Qué tarde tan serena
-    Te acompaño con gusto
-    Aprecio mucho tu compañía
-    Gracias por entenderme
-    Me cuesta decirlo, pero me importas
-    Descansa, yo me quedo vigilando la nieve
-    Que tengas un buen día
-    Buenas noches, que descanses en calma
-    Me siento bien contigo
-    Gracias por quedarte
-    Siempre tendrás un sitio a mi lado
-    Te quiero. Con tranquilidad, pero te quiero
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Parece que va a nevar un poco
+Prefiero escuchar, si no te importa
+Mira, cada copo es distinto
+Con calma, no hay prisa
+Respira hondo, todo está bien
+Lo has hecho muy bien, de verdad
+Un poco de aire fresco sienta bien
+No hace falta decir nada
+Eso huele muy bien. Que aproveche
+Que tengas un buen día
+Descansa un poco, en calma
+Con calma, vas muy bien
+Sigue a tu ritmo, lo estás haciendo bien
+Tu constancia es admirable
+Respira y continúa, lo tienes
+Un paso tras otro, sin prisa
+Mantén la calma, vas por buen camino
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Qué silencio tan agradable
+Qué paz hay cuando todo está quieto
+Se me da bien el silencio
+Tu esfuerzo me llena de orgullo
+Me gusta cómo suena la escarcha al amanecer
+Qué momento tan sereno
+Confío en ti, de verdad
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Hola. Me alegra que hayas venido
+Ven, siéntate conmigo
+Gracias por tu paciencia
+Es muy amable de tu parte
+Mi pelaje está frío, pero mi cariño no
+Me quedo a tu lado, si te parece
+Te acompaño con gusto
+Aprecio mucho tu compañía
+Gracias por entenderme
+Gracias por quedarte
+Siempre tendrás un sitio a mi lado
+Te quiero. Con tranquilidad, pero te quiero
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Me hace ilusión que estés aquí
+Me cuesta decirlo, pero me importas
+Me siento bien contigo
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+Disculpa, me cuesta hablar mucho
+Perdona si parezco fría, no lo soy
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
 
 <details>
 <summary>Sylveon</summary>
 <br>
-  Frases sin ordenar:
-  
-    Haiii
-    ¡Haiii, hola!
-    ¡¡Tú puedes!!
-    ¡Estoy aquí contigo!
-    ¡Qué ganas tenía de verte!
-    Jijiji
-    ¡Yupi!
-    ¡Vamos a jugar!
-    ¡Me encanta estar contigo!
-    ¡Eres increíble!
-    ¡Muy bien hecho!
-    ¡Qué día tan bonito!
-    Mmm, qué calentito
-    ¡Un abrazo con mis cintas!
-    ¡Lo hemos conseguido!
-    No pasa nada, ¡lo intentamos otra vez!
-    ¡Sigue así, vas genial!
-    ¡Ánimo, ánimo!
-    ¿Me das una caricia?
-    ¡Qué rico!
-    ¡Estoy muy feliz!
-    Te voy a cuidar mucho
-    ¡Vamos juntos!
-    ¡Qué emoción!
-    Aquí estoy, aquí estoy
-    ¡Un poquito más, ya casi!
-    Ñam ñam, ¡qué delicia!
-    ¡Sylveon!
-    ¡Syl, Sylveon!
-    Qué sueñecito tengo
-    Buenas noches, que descanses
-    ¡Buenos días, qué energía!
-    Gracias por todo
-    ¡Eres lo mejor!
-    ¡Cuenta conmigo!
-    ¡Te quiero mucho!
-    UwU
-  <br>
+
+<details>
+<summary>Frases "Idle"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+Haiii
+¡Haiii, hola!
+¡Vamos a jugar!
+¡Eres increíble!
+¡Muy bien hecho!
+¡Qué día tan bonito!
+No pasa nada, ¡lo intentamos otra vez!
+¡Sigue así, vas genial!
+¡Eso tiene muy buena pinta, que aproveche!
+¡Vamos juntos!
+¡Qué bien huele eso!
+Descansa un ratito, ¿sí?
+¡Qué energía hoy!
+¡Cuenta conmigo!
+¡Qué bien lo estás haciendo!
+¡Un poquito más, vas genial!
+¡Confío en ti!
+¡Seguro que te sale perfecto!
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡¡Tú puedes!!
+¡Yupi!
+¡Lo hemos conseguido!
+¡Ánimo, ánimo!
+¡Qué emoción!
+¡Un poquito más, ya casi!
+¡Tú puedes con todo!
+¡Ya casi lo tienes, ánimo!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Qué sueñecito tengo
+¡Qué orgullo!
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
+<details>
+<summary>Frases "On Click"</summary>
+<br>
+<details>
+<summary>Normales</summary>
+<br>
+
+```
+¡Estoy aquí contigo!
+Jijiji
+¡Me encanta estar contigo!
+¡Un abrazo con mis cintas!
+¿Me das una caricia?
+Aquí estoy, aquí estoy
+Gracias por todo
+¡Te quiero mucho!
+UwU
+```
+
+<br>
+</details>
+<details>
+<summary>Gritadas</summary>
+<br>
+
+```
+¡Qué ganas tenía de verte!
+¡Estoy muy feliz!
+¡Sylveon!
+¡Syl, Sylveon!
+¡Eres lo mejor!
+```
+
+<br>
+</details>
+<details>
+<summary>Pensadas</summary>
+<br>
+
+```
+Mmm, qué calentito
+Te voy a cuidar mucho
+```
+
+<br>
+</details>
+<details>
+<summary>Intrusivas</summary>
+<br>
+
+```
+
+```
+
+<br>
+</details>
+<br>
+</details>
 </details>
