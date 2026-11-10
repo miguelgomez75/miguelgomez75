@@ -604,5 +604,11 @@
     "date": "2026-11-10",
     "mood": "sleeping",
     "count": 0
+  },
+  {
+    "ts": "2026-11-10T09:30:45Z",
+    "date": "2026-11-10",
+    "mood": "waking_up",
+    "count": 1
   }
 ]
