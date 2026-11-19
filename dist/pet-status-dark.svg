@@ -4,10 +4,10 @@
         font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">Mi actividad de hoy</text>
   <text x="140.0" y="42" font-size="13" fill="#c9d1d9"
         font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">
-    Estado: awake · 3 commit(s) hoy
+    Estado: curious · 5 commit(s) hoy
   </text>
   <rect x="16" y="70" width="248" height="14" rx="7" fill="#30363d"/>
-  <rect x="16" y="70" width="82.7" height="14" rx="7" fill="#3fb950"/>
+  <rect x="16" y="70" width="0.0" height="14" rx="7" fill="#3fb950"/>
   <text x="140.0" y="100" font-size="11" fill="#8b949e"
-        font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">Faltan 2 commit(s) para pasar a 'curious'</text>
+        font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle">Faltan 5 commit(s) para pasar a 'happy'</text>
 </svg>
